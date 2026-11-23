@@ -1,0 +1,371 @@
+/* Mengatur semua elemen agar ukuran dan jaraknya lebih mudah diatur */
+* {
+    margin: 0; /* Menghilangkan jarak luar bawaan */
+    padding: 0; /* Menghilangkan jarak dalam bawaan */
+    box-sizing: border-box; /* Mengatur ukuran elemen agar lebih rapi */
+}
+
+/* Mengatur tampilan dasar seluruh halaman */
+body {
+    font-family: Arial, sans-serif; /* Mengatur jenis huruf */
+    background-color: white; /* Memberi warna latar belakang putih */
+    color: #333; /* Mengatur warna tulisan */
+    line-height: 1.6; /* Mengatur jarak antarbaris tulisan */
+}
+
+/* Bagian menu navigasi */
+nav {
+    background-color: #245b43; /* Memberi warna hijau pada menu */
+    color: white; /* Mengatur warna tulisan menu */
+    padding: 18px 8%; /* Memberi jarak di dalam menu */
+    display: flex; /* Membuat isi menu berjajar */
+    justify-content: space-between; /* Memisahkan judul dan daftar menu */
+    align-items: center; /* Membuat isi menu sejajar tengah */
+    flex-wrap: wrap; /* Membuat isi menu bisa turun jika layar sempit */
+}
+
+/* Mengatur judul website pada menu */
+nav h2 {
+    font-size: 22px; /* Mengatur ukuran judul */
+}
+
+/* Mengatur daftar menu navigasi */
+nav ul {
+    display: flex; /* Membuat daftar menu berjajar */
+    list-style: none; /* Menghilangkan tanda titik pada daftar */
+    gap: 20px; /* Memberi jarak antar menu */
+}
+
+/* Mengatur tulisan pada menu navigasi */
+nav a {
+    color: white; /* Memberi warna putih pada tulisan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-size: 14px; /* Mengatur ukuran tulisan */
+}
+
+/* Mengubah warna tulisan ketika menu diarahkan */
+nav a:hover {
+    color: #c8e6d5; /* Mengubah warna tulisan menjadi hijau muda */
+}
+
+/* Pengaturan gambar secara umum */
+img {
+    max-width: 100%; /* Membatasi lebar gambar agar tidak melebihi tempatnya */
+    height: auto; /* Menyesuaikan tinggi gambar secara otomatis */
+    display: block; /* Membuat gambar tampil sebagai blok */
+}
+
+/* Bagian beranda */
+#home {
+    background-color: #e5eee8; /* Memberi warna latar belakang hijau muda */
+    padding: 45px 20px; /* Memberi jarak di dalam bagian beranda */
+    text-align: center; /* Membuat tulisan berada di tengah */
+}
+
+/* Mengatur judul pada beranda */
+#home h1 {
+    color: #245b43; /* Memberi warna hijau pada judul */
+    margin-bottom: 12px; /* Memberi jarak bawah judul */
+}
+
+/* Mengatur paragraf pada beranda */
+#home p {
+    margin-bottom: 20px; /* Memberi jarak bawah paragraf */
+}
+
+/* Mengatur gambar pada beranda */
+#home img {
+    width: 60%; /* Mengatur lebar gambar */
+    max-height: 350px; /* Membatasi tinggi gambar */
+    margin: 20px auto; /* Memberi jarak dan menempatkan gambar di tengah */
+    object-fit: contain; /* Menampilkan gambar secara utuh */
+}
+
+/* Mengatur tombol pelajari lebih lanjut */
+.tombol {
+    display: inline-block; /* Membuat tombol bisa diberi ukuran dan jarak */
+    background-color: #245b43; /* Memberi warna hijau pada tombol */
+    color: white; /* Mengatur warna tulisan tombol */
+    padding: 10px 18px; /* Memberi jarak di dalam tombol */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 5px; /* Membuat sudut tombol sedikit melengkung */
+}
+
+/* Mengubah warna tombol ketika diarahkan */
+.tombol:hover {
+    background-color: #183e2e; /* Mengubah warna tombol menjadi hijau gelap */
+}
+
+/* Bagian tentang badminton */
+#tentang {
+    padding: 35px 10%; /* Memberi jarak di dalam bagian tentang */
+}
+
+/* Mengatur judul bagian tentang */
+#tentang h2 {
+    color: #245b43; /* Memberi warna hijau pada judul */
+    margin-bottom: 20px; /* Memberi jarak bawah judul */
+}
+
+/* Mengatur posisi gambar dan tulisan tentang */
+.tentang {
+    display: flex; /* Membuat gambar dan tulisan berjajar */
+    align-items: center; /* Membuat gambar dan tulisan sejajar tengah */
+    gap: 25px; /* Memberi jarak antara gambar dan tulisan */
+}
+
+/* Mengatur gambar pada bagian tentang */
+.tentang img {
+    width: 40%; /* Mengatur lebar gambar */
+    max-height: 280px; /* Membatasi tinggi gambar */
+    object-fit: contain; /* Menampilkan gambar secara utuh */
+}
+
+/* Bagian manfaat badminton */
+#manfaat {
+    background-color: #e5eee8; /* Memberi warna latar belakang hijau muda */
+    padding: 35px 10%; /* Memberi jarak di dalam bagian manfaat */
+    text-align: center; /* Membuat tulisan berada di tengah */
+}
+
+/* Mengatur judul manfaat */
+#manfaat h2 {
+    color: #245b43; /* Memberi warna hijau pada judul */
+    margin-bottom: 10px; /* Memberi jarak bawah judul */
+}
+
+/* Mengatur paragraf manfaat */
+#manfaat > p {
+    margin-bottom: 20px; /* Memberi jarak bawah paragraf */
+}
+
+/* Mengatur susunan kotak manfaat */
+.manfaat {
+    display: flex; /* Membuat kotak manfaat berjajar */
+    gap: 15px; /* Memberi jarak antar kotak */
+    justify-content: center; /* Membuat kotak berada di tengah */
+}
+
+/* Mengatur setiap kotak manfaat */
+.manfaat div {
+    background-color: white; /* Memberi warna putih pada kotak */
+    padding: 20px; /* Memberi jarak di dalam kotak */
+    border-radius: 5px; /* Membuat sudut kotak melengkung */
+    flex: 1; /* Membuat ukuran kotak menyesuaikan ruang */
+}
+
+/* Mengatur judul pada kotak manfaat */
+.manfaat h3 {
+    color: #245b43; /* Memberi warna hijau pada judul */
+    margin-bottom: 8px; /* Memberi jarak bawah judul */
+}
+
+/* Bagian teknik dasar */
+#teknik {
+    padding: 35px 10%; /* Memberi jarak di dalam bagian teknik */
+}
+
+/* Mengatur judul teknik */
+#teknik h2 {
+    color: #245b43; /* Memberi warna hijau pada judul */
+    margin-bottom: 10px; /* Memberi jarak bawah judul */
+}
+
+/* Mengatur paragraf teknik */
+#teknik p {
+    margin-bottom: 20px; /* Memberi jarak bawah paragraf */
+}
+
+/* Mengatur area tabel */
+.tabel {
+    overflow-x: auto; /* Memungkinkan tabel digeser jika layar sempit */
+}
+
+/* Mengatur ukuran dan garis tabel */
+table {
+    width: 100%; /* Membuat tabel memenuhi lebar tempatnya */
+    border-collapse: collapse; /* Menggabungkan garis tabel */
+}
+
+/* Mengatur sel judul dan isi tabel */
+th, td {
+    border: 1px solid #999; /* Memberi garis pada tabel */
+    padding: 10px; /* Memberi jarak di dalam sel */
+    text-align: left; /* Membuat tulisan rata kiri */
+}
+
+/* Mengatur bagian judul tabel */
+th {
+    background-color: #245b43; /* Memberi warna hijau pada judul tabel */
+    color: white; /* Memberi warna putih pada tulisan */
+}
+
+/* Bagian perlengkapan badminton */
+#perlengkapan {
+    background-color: #e5eee8; /* Memberi warna latar belakang hijau muda */
+    padding: 35px 10%; /* Memberi jarak di dalam bagian perlengkapan */
+    text-align: center; /* Membuat tulisan berada di tengah */
+}
+
+/* Mengatur judul perlengkapan */
+#perlengkapan h2 {
+    color: #245b43; /* Memberi warna hijau pada judul */
+    margin-bottom: 20px; /* Memberi jarak bawah judul */
+}
+
+/* Mengatur susunan perlengkapan */
+.barang {
+    display: flex; /* Membuat perlengkapan berjajar */
+    gap: 20px; /* Memberi jarak antar perlengkapan */
+    justify-content: center; /* Membuat perlengkapan berada di tengah */
+}
+
+/* Mengatur kotak setiap perlengkapan */
+.barang div {
+    background-color: white; /* Memberi warna putih pada kotak */
+    padding: 15px; /* Memberi jarak di dalam kotak */
+    border-radius: 5px; /* Membuat sudut kotak melengkung */
+    flex: 1; /* Membuat ukuran kotak menyesuaikan ruang */
+}
+
+/* Mengatur gambar perlengkapan */
+.barang img {
+    width: 100%; /* Membuat gambar memenuhi lebar kotak */
+    height: 180px; /* Mengatur tinggi area gambar */
+    object-fit: contain; /* Menampilkan gambar secara utuh */
+    margin-bottom: 10px; /* Memberi jarak bawah gambar */
+}
+
+/* Mengatur judul setiap perlengkapan */
+.barang h3 {
+    color: #245b43; /* Memberi warna hijau pada judul */
+}
+
+/* Bagian kontak dan saran */
+#kontak {
+    padding: 35px 10%; /* Memberi jarak di dalam bagian kontak */
+}
+
+/* Mengatur judul kontak */
+#kontak h2 {
+    color: #245b43; /* Memberi warna hijau pada judul */
+    margin-bottom: 15px; /* Memberi jarak bawah judul */
+}
+
+/* Mengatur lebar formulir */
+form {
+    max-width: 600px; /* Membatasi lebar formulir */
+}
+
+/* Mengatur tulisan label pada formulir */
+label {
+    display: block; /* Membuat label berada di baris tersendiri */
+    margin-top: 10px; /* Memberi jarak atas label */
+}
+
+/* Mengatur kotak input dan pesan */
+input, textarea {
+    width: 100%; /* Membuat kotak memenuhi lebar formulir */
+    padding: 10px; /* Memberi jarak di dalam kotak */
+    margin: 5px 0; /* Memberi jarak atas dan bawah */
+    border: 1px solid #aaa; /* Memberi garis tepi kotak */
+    border-radius: 4px; /* Membuat sudut kotak melengkung */
+    font-family: Arial, sans-serif; /* Mengatur jenis huruf */
+}
+
+/* Mengatur tombol kirim */
+button {
+    background-color: #245b43; /* Memberi warna hijau pada tombol */
+    color: white; /* Memberi warna putih pada tulisan */
+    padding: 10px 20px; /* Memberi jarak di dalam tombol */
+    border: none; /* Menghilangkan garis tepi tombol */
+    border-radius: 4px; /* Membuat sudut tombol melengkung */
+    cursor: pointer; /* Mengubah kursor ketika diarahkan */
+    margin-top: 8px; /* Memberi jarak atas tombol */
+}
+
+/* Mengubah warna tombol ketika diarahkan */
+button:hover {
+    background-color: #183e2e; /* Mengubah warna tombol menjadi hijau gelap */
+}
+
+/* Bagian copyright */
+footer {
+    background-color: #245b43; /* Memberi warna hijau pada bagian bawah */
+    color: white; /* Mengatur warna tulisan menjadi putih */
+    text-align: center; /* Membuat tulisan berada di tengah */
+    padding: 35px 20px; /* Memberi jarak di dalam footer */
+}
+
+/* Mengatur judul pada footer */
+footer h2 {
+    margin-bottom: 10px; /* Memberi jarak bawah judul */
+}
+
+/* Mengatur paragraf pada footer */
+footer p {
+    font-size: 14px; /* Mengatur ukuran tulisan */
+    margin: 8px 0; /* Memberi jarak atas dan bawah */
+}
+
+/* Mengatur garis pemisah pada footer */
+footer hr {
+    width: 70%; /* Mengatur panjang garis */
+    margin: 20px auto; /* Memberi jarak dan menempatkan garis di tengah */
+    border: 0; /* Menghilangkan garis bawaan */
+    border-top: 1px solid #8aa997; /* Membuat garis pemisah */
+}
+
+/* Pengaturan tampilan untuk layar HP */
+@media (max-width: 600px) {
+
+    /* Mengatur menu navigasi pada HP */
+    nav {
+        flex-direction: column; /* Menyusun judul dan menu ke bawah */
+        gap: 12px; /* Memberi jarak antar bagian menu */
+    }
+
+    /* Mengatur daftar menu pada HP */
+    nav ul {
+        flex-wrap: wrap; /* Membuat menu bisa turun ke baris berikutnya */
+        justify-content: center; /* Membuat menu berada di tengah */
+        gap: 12px; /* Memberi jarak antar menu */
+    }
+
+    /* Mengatur gambar beranda pada HP */
+    #home img {
+        width: 100%; /* Membuat gambar menyesuaikan lebar layar */
+        max-height: 250px; /* Membatasi tinggi gambar */
+    }
+
+    /* Mengatur bagian tentang pada HP */
+    .tentang {
+        flex-direction: column; /* Menyusun gambar dan tulisan ke bawah */
+    }
+
+    /* Mengatur gambar tentang pada HP */
+    .tentang img {
+        width: 100%; /* Membuat gambar memenuhi lebar tempatnya */
+        max-height: 250px; /* Membatasi tinggi gambar */
+    }
+
+    /* Mengatur kotak manfaat dan perlengkapan pada HP */
+    .manfaat,
+    .barang {
+        flex-direction: column; /* Menyusun kotak ke bawah */
+    }
+
+    /* Mengatur gambar perlengkapan pada HP */
+    .barang img {
+        height: 180px; /* Menentukan tinggi area gambar */
+    }
+
+    /* Mengatur jarak setiap bagian pada HP */
+    #tentang,
+    #manfaat,
+    #teknik,
+    #perlengkapan,
+    #kontak {
+        padding: 25px 5%; /* Mengurangi jarak agar sesuai layar HP */
+    }
+}
